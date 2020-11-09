@@ -18,7 +18,7 @@ export const initialFormState: FormState = {
     }
 };
 
-export const formReducer = (state: FormState, action: Action):FormState => {
+export const formReducer: React.Reducer<FormState, Action> = (state, action) => {
     switch (action.type) {
         case "SAVE_PERSONAL_DETAILS":
             return {
